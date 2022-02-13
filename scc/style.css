@@ -22,13 +22,28 @@ body {
 }
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 /* Секция Header */
+
 .logo {
   font-family: Raleway;
   font-style: normal;
@@ -37,8 +52,30 @@ a {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
+.container .logo {
+  margin-right: 93px;
+}
+.nav {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
 
+.nav .item {
+  margin-right: 50px;
+}
+.nav .item:last-child {
+  margin-right: 0;
+}
+
+.page-header .contacts {
+  margin-left: auto;
+}
 .nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -50,12 +87,21 @@ a {
 .nav .link:focus {
   color: var(--accent-color);
 }
-.link-main {
+.nav .link.main {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+.contacts {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+.contacts li:not(:last-child) {
+  margin-right: 50px;
 }
 .contacts-link {
   font-style: normal;
@@ -69,8 +115,21 @@ a {
 .contacts-link:focus {
   color: var(--accent-color);
 }
+.main-nav {
+  display: flex;
+}
+
 /* Секция Главная страница */
+.hero {
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-bottom: 30px;
+
   font-size: 44px;
   font-weight: 900;
   line-height: 1.4;
@@ -96,7 +155,25 @@ a {
 }
 
 /* Секция Преимущества  */
+.no-title {
+  background-color: var(--white-color);
+}
+.advantage .item:not(:last-child) {
+  margin-right: 30px;
+}
+.advantage {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 .subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -105,6 +182,9 @@ a {
   color: var(--tittle-text-color);
 }
 .description {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -119,7 +199,50 @@ a {
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
 }
+.section .section-items {
+  display: flex;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.items:not(:last-child) {
+  margin-right: 30px;
+}
+.title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 50px;
+  padding-top: 94px;
+}
+.section .whatwedo {
+  background-color: var(--white-bg-color);
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 94px;
+}
+
 /* Секция Наша команда  */
+.section.our-team {
+  background: #f5f4fa;
+}
+
+.our-team-container {
+  width: 1200px;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 94px;
+}
+.list-workers:not(:last-child) {
+  margin-right: 30px;
+}
 .name {
   font-size: 16px;
   font-weight: 500;
@@ -134,7 +257,26 @@ a {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+.card-workers {
+  background: var(--white-bg-color);
 
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.name,
+.position {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.name {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.position {
+  padding-bottom: 30px;
+}
 /* Секция footer  */
 .footer {
   background-color: #2f303a;
@@ -147,6 +289,36 @@ a {
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
+.footer-container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.footer .logo {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.footer-address .contacts {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-bottom: 60px;
+}
+address {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 9px;
+}
+.footer-links {
+  padding-bottom: 9px;
+}
+.contacts-link {
+  display: block;
+}
+
 /* Основная секция портфолио с работами */
 /* Список кнопок */
 .btn-menu {

@@ -11,34 +11,42 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./scc/style.css" />
   </head>
   <body>
     <!-- Секция Header -->
-    <header>
-      <a class="logo" href="./index.html">
-        <span style="color: #2196f3">Web</span
-        ><span style="color: #000000">Studio</span></a
-      >
-      <nav>
+    <header class="page-header">
+      <nav class="container">
+        <a class="logo" href="./index.html">
+          <span style="color: #2196f3">Web</span
+          ><span style="color: #000000">Studio</span></a
+        >
+
         <ul class="nav">
-          <li><a class="link" href="./index.html">Студия</a></li>
-          <li><a class="link-main" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="link" href="">Контакты</a></li>
+          <li class="item"><a class="link" href="./index.html">Студия</a></li>
+          <li class="item">
+            <a class="link main" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="item"><a class="link" href="">Контакты</a></li>
+        </ul>
+
+        <ul class="contacts">
+          <li>
+            <a class="contacts-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="contacts-link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </nav>
-      <ul class="contacts">
-        <li>
-          <a class="contacts-link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="contacts-link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
     </header>
     <!-- Основная секция портфолио с работами -->
     <main>
