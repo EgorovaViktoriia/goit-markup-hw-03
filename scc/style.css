@@ -122,10 +122,14 @@ a {
 /* Секция Главная страница */
 .hero {
   text-align: center;
-  padding-bottom: 200px;
+  padding-bottom: 280px;
   padding-top: 200px;
+  background-color: #2f303a;
 }
 .hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
   margin-top: 0;
   margin-bottom: 0;
   margin-bottom: 30px;
@@ -139,8 +143,18 @@ a {
   background-color: #2f303a;
   color: var(--white-color);
 }
+.hero .button {
+  min-width: 200px;
+}
+
 .button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px 10px 32px;
+
   font-family: inherit;
+  align-items: center;
+  text-align: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.9;
@@ -162,6 +176,9 @@ a {
   margin-right: 30px;
 }
 .advantage {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -200,6 +217,9 @@ a {
   color: var(--tittle-text-color);
 }
 .section .section-items {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   padding-left: 0;
   margin-top: 0;
@@ -216,7 +236,7 @@ a {
   padding-top: 94px;
 }
 .section .whatwedo {
-  background-color: var(--white-bg-color);
+  background-color: var(--white-color);
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -228,6 +248,7 @@ a {
 /* Секция Наша команда  */
 .section.our-team {
   background: #f5f4fa;
+  display: flex;
 }
 
 .our-team-container {
@@ -258,7 +279,7 @@ a {
   color: var(--primary-text-color);
 }
 .card-workers {
-  background: var(--white-bg-color);
+  background: var(--white-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -301,7 +322,7 @@ a {
   padding-top: 60px;
   padding-bottom: 20px;
 }
-.footer-address .contacts {
+.footer-address .footer-contacts {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -309,11 +330,10 @@ a {
 }
 address {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .footer-links {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .contacts-link {
   display: block;
@@ -321,7 +341,41 @@ address {
 
 /* Основная секция портфолио с работами */
 /* Список кнопок */
+.footer-line {
+  border-bottom: 1px solid var(--primary-text-color);
+}
+.main-container {
+  background: var(--white-color);
+}
+.portfolio-section {
+  width: 1200px;
+  background-color: var(--white-color);
+  margin-top: 94px;
+  margin-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.list-button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 34px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
 .btn-menu {
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+.list-button .button-list-li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.list-button .btn-menu {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
@@ -335,22 +389,52 @@ address {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
-.btn-menu-main {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--white-color);
-  background-color: var(--accent-color);
-}
-.btn-menu-main,
-.btn-menu-main:focus {
-  color: var(--white-color);
-  background-color: var(--accent-color);
-}
 
 /* Список работ с img */
+.portfolio-section {
+  width: 1200px;
+  background-color: var(--white-color);
+  margin-top: 94px;
+  margin-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.proj-item {
+  display: block;
+}
+.proj-item:nth-child(n + 1) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.proj-item:nth-child(3n) {
+  margin-right: 0;
+}
+.proj-card {
+  display: block;
+  width: 370px;
+
+  background: var(--white-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  box-sizing: border-box;
+}
+.proj-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.proj-list {
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 0;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+.proj-descrip,
+.project-title {
+  margin: 0;
+}
 .proj-title {
   font-size: 18px;
   font-weight: 700;
@@ -364,4 +448,7 @@ address {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.summ-descrip {
+  padding: 20px 24px;
 }
