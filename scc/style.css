@@ -327,7 +327,7 @@ address {
 /* Основная секция портфолио с работами */
 /* Список кнопок */
 .footer-line {
-  border-bottom: 1px solid var(--primary-text-color);
+  border-bottom: 1px solid#ECECEC;
 }
 .main-container {
   background: var(--white-color);
