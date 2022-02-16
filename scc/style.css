@@ -36,13 +36,16 @@ a {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/* Секция Header */
+
+.container.header {
   align-items: center;
   display: flex;
   margin-bottom: 0;
   margin-top: 0;
 }
-
-/* Секция Header */
 
 .logo {
   font-family: Raleway;
@@ -62,10 +65,10 @@ a {
   padding-right: 0;
 }
 
-.nav .item {
+.nav .item-header {
   margin-right: 50px;
 }
-.nav .item:last-child {
+.nav .item-header:last-child {
   margin-right: 0;
 }
 
@@ -103,7 +106,10 @@ a {
 .contacts li:not(:last-child) {
   margin-right: 50px;
 }
-.contacts-link {
+.contacts-link-header {
+  display: flex;
+  margin-left: auto;
+
   font-style: normal;
   font-size: 14px;
   font-weight: 500;
@@ -122,14 +128,13 @@ a {
 /* Секция Главная страница */
 .hero {
   text-align: center;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
   padding-top: 200px;
   background-color: #2f303a;
 }
 .hero-title {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   margin-top: 0;
   margin-bottom: 0;
   margin-bottom: 30px;
@@ -170,18 +175,16 @@ a {
 
 /* Секция Преимущества  */
 .no-title {
+  padding-top: 94px;
   background-color: var(--white-color);
 }
 .advantage .item:not(:last-child) {
   margin-right: 30px;
 }
+.item {
+  width: 270px;
+}
 .advantage {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
   display: flex;
   margin-bottom: 0;
   margin-top: 0;
@@ -216,10 +219,7 @@ a {
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
 }
-.section .section-items {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+.section-items {
   display: flex;
   padding-left: 0;
   margin-top: 0;
@@ -235,32 +235,17 @@ a {
   padding-bottom: 50px;
   padding-top: 94px;
 }
-.section .whatwedo {
+.section-whatwedo {
   background-color: var(--white-color);
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
   padding-bottom: 94px;
 }
 
 /* Секция Наша команда  */
-.section.our-team {
+.section {
+  padding-bottom: 94px;
   background: #f5f4fa;
-  display: flex;
 }
 
-.our-team-container {
-  width: 1200px;
-  margin-bottom: 0;
-  margin-top: 0;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 94px;
-}
 .list-workers:not(:last-child) {
   margin-right: 30px;
 }
@@ -301,6 +286,7 @@ a {
 /* Секция footer  */
 .footer {
   background-color: #2f303a;
+  height: 252px;
 }
 .address {
   font-style: normal;
@@ -310,13 +296,15 @@ a {
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
-.footer-container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+.contacts-link-footer {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
+
 .footer .logo {
   display: block;
   padding-top: 60px;
@@ -334,9 +322,6 @@ address {
 }
 .footer-links {
   margin-bottom: 9px;
-}
-.contacts-link {
-  display: block;
 }
 
 /* Основная секция портфолио с работами */
