@@ -47,7 +47,10 @@ a {
   margin-top: 0;
 }
 
-.logo {
+.logo-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-family: Raleway;
   font-style: normal;
   font-size: 26px;
@@ -55,7 +58,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-.container .logo {
+.container .logo-header {
   margin-right: 93px;
 }
 .nav {
@@ -107,10 +110,10 @@ a {
   margin-right: 50px;
 }
 .contacts-link-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: flex;
-  margin-left: auto;
 
-  font-style: normal;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -231,13 +234,12 @@ a {
 .title {
   text-align: center;
   margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 50px;
-  padding-top: 94px;
+  margin-bottom: 50px;
 }
 .section-whatwedo {
   background-color: var(--white-color);
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 /* Секция Наша команда  */
@@ -246,6 +248,10 @@ a {
   background: #f5f4fa;
 }
 
+.summ-position {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .list-workers:not(:last-child) {
   margin-right: 30px;
 }
@@ -263,7 +269,7 @@ a {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.card-workers {
+.list-workers {
   background: var(--white-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -277,16 +283,25 @@ a {
   margin-bottom: 0;
 }
 .name {
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
-.position {
-  padding-bottom: 30px;
-}
+
 /* Секция footer  */
+.logo-footer {
+  margin-bottom: 32px;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: #2f303a;
-  height: 252px;
 }
 .address {
   font-style: normal;
@@ -314,10 +329,8 @@ a {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  padding-bottom: 60px;
 }
 address {
-  margin-top: 0;
   margin-bottom: 9px;
 }
 .footer-links {
@@ -340,6 +353,7 @@ address {
 
 .list-button {
   display: flex;
+  margin-bottom: 54px;
   justify-content: center;
   padding-bottom: 34px;
   padding-left: 0;
@@ -377,9 +391,7 @@ address {
   margin-top: 94px;
   margin-bottom: 94px;
 }
-.proj-item {
-  display: block;
-}
+
 .proj-item:nth-child(n + 1) {
   margin-right: 30px;
   margin-bottom: 30px;
@@ -387,16 +399,7 @@ address {
 .proj-item:nth-child(3n) {
   margin-right: 0;
 }
-.proj-card {
-  display: block;
-  width: 370px;
 
-  background: var(--white-bg-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  box-sizing: border-box;
-}
 .proj-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
@@ -411,7 +414,13 @@ address {
 .project-title {
   margin: 0;
 }
+.proj-item {
+  width: 370px;
+}
 .proj-title {
+  margin-top: 0;
+  margin-bottom: 0px;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -427,4 +436,7 @@ address {
 }
 .summ-descrip {
   padding: 20px 24px;
+  border-right: 1px solid#ECECEC;
+  border-bottom: 1px solid#ECECEC;
+  border-left: 1px solid#ECECEC;
 }
