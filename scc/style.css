@@ -393,13 +393,13 @@ address {
 /* Список работ с img */
 .portfolio-section {
   background-color: var(--white-color);
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .proj-item:nth-child(n + 1) {
-  padding-right: 30px;
-  padding-bottom: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 .proj-item:nth-child(3n) {
   margin-right: 0;
