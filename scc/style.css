@@ -48,8 +48,8 @@ a {
 }
 
 .logo-header {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 
   font-family: Raleway;
   font-style: normal;
@@ -177,6 +177,10 @@ a {
 }
 
 /* Секция Преимущества  */
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
 .no-title {
   padding-top: 94px;
   background-color: var(--white-color);
@@ -244,6 +248,7 @@ a {
 
 /* Секция Наша команда  */
 .section {
+  padding-top: 94px;
   padding-bottom: 94px;
   background: #f5f4fa;
 }
@@ -288,10 +293,10 @@ a {
 
 /* Секция footer  */
 .logo-footer {
-  margin-bottom: 32px;
+  display: block;
+  margin-bottom: 20px;
 
   font-family: Raleway;
-  font-style: normal;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
@@ -322,7 +327,7 @@ a {
 
 .footer .logo {
   display: block;
-  padding-top: 60px;
+  /* padding-top: 60px; */
   padding-bottom: 20px;
 }
 .footer-address .footer-contacts {
@@ -330,10 +335,8 @@ a {
   margin-bottom: 0;
   padding-left: 0;
 }
-address {
-  margin-bottom: 9px;
-}
-.footer-links {
+
+.footer-links:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -347,8 +350,6 @@ address {
 }
 .portfolio-section {
   background-color: var(--white-color);
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 
 .list-button {
@@ -378,6 +379,7 @@ address {
   text-align: center;
   color: var(--tittle-text-color);
   background-color: #f5f4fa;
+  border: none;
 }
 .btn-menu:hover,
 .btn-menu:focus {
